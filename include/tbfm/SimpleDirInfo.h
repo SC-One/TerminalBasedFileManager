@@ -4,6 +4,10 @@
 #include <string>
 #include <vector>
 
+///
+/// \brief The SimpleDirInfo class is useful to retrieve files and dirs info in
+/// specific path
+///
 class SimpleDirInfo {
   inline static const std::filesystem::path WhereExecuted =
       std::filesystem::current_path();
@@ -13,6 +17,9 @@ class SimpleDirInfo {
   SimpleDirInfo();
 
   std::vector<std::string> ls() const;
+
+  bool cd(std::string const &entry);
+  bool mkdir(std::string const &nextPath);
 
  public:
   static std::vector<std::string> ls(std::string const &path);
