@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 
-set(ROOT_PRJ_NAME TBFM)
+set(ROOT_PRJ_NAME tbfm)
 project(${ROOT_PRJ_NAME} LANGUAGES CXX)
 
 set(ThirdParty_dir ${CMAKE_CURRENT_SOURCE_DIR}/Thirdparty)
@@ -11,7 +11,7 @@ set(CMAKE_AUTORCC ON)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
+#set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 file(GLOB_RECURSE headers
   ${CMAKE_CURRENT_SOURCE_DIR}/include/*.h
@@ -38,7 +38,8 @@ target_link_libraries(${ROOT_PRJ_NAME} PRIVATE
 )
 
 target_include_directories(${ROOT_PRJ_NAME} PRIVATE
-  $${ThirdParty_dir}/FTXUI/include
+  ${CMAKE_CURRENT_SOURCE_DIR}/include
+  ${ThirdParty_dir}/FTXUI/include
 )
 
 #install(TARGETS ${ROOT_PRJ_NAME}
