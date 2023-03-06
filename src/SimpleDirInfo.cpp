@@ -14,14 +14,22 @@ std::vector<std::string> SimpleDirInfo::ls() const {
   return result;
 }
 
+std::string SimpleDirInfo::currentDir() const { return _path; }
+
 bool SimpleDirInfo::cd(const std::string &entry) try {
-  if (entry == "..")
+  if (entry == "..") {
     _path = _path.parent_path();
-  else {
+    return true;
+  } else {
     auto tmp = _path / entry;
-    if (!tmp.empty()) _path = tmp;
+    if (!tmp.empty()) {
+      if (fs::is_directory(tmp)) {
+        _path = tmp;
+        return true;
+      }
+    }
   }
-  return true;
+  return false;
 } catch (...) {
   return false;
 }
