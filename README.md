@@ -10,3 +10,6 @@ It help you to iterate faster on the directories and files and taking fast data 
 ### Useage
 - using Arrow keys (left/right) to iterate on files/dirs
 - using Tab key for returning the current directory and exit 
+
+### Demo
+![Demo](https://github.com/SC-One/TerminalBasedFileManager/blob/addGif/TBFM_Demo.mp4)
