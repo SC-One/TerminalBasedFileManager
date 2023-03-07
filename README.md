@@ -8,8 +8,9 @@ It help you to iterate faster on the directories and files and taking fast data 
   - [X] iterate on directories faster by arrow keys
   - [X] return last directory.(active dir)
 ### Useage
-- using Arrow keys (left/right) to iterate on files/dirs
-- using Tab key for returning the current directory and exit 
+- Arrow keys (left/right) -> iterate on files/dirs
+- Tab key                 -> returning the current directory and exit 
+- Backspace Key           -> going back to parent dir(same as `cd ..`)
 
 ### Demo
-![Demo](https://github.com/SC-One/TerminalBasedFileManager/blob/addGif/TBFM_Demo.mp4)
+![Demo](https://github.com/SC-One/TerminalBasedFileManager/blob/addGif/tbfm.gif)
