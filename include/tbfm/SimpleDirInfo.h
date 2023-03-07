@@ -17,6 +17,7 @@ class SimpleDirInfo {
   SimpleDirInfo();
 
   std::vector<std::string> ls() const;
+  std::string currentDir() const;
 
   bool cd(std::string const &entry);
   bool mkdir(std::string const &nextPath);
