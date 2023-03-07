@@ -5,6 +5,12 @@ TBFM is a project that is for iterating easier in terminal on the file hirarchy
 It help you to iterate faster on the directories and files and taking fast data informations like:
   - [ ] copy - paste
   - [ ] read data fast
-  - [ ] iterate on directories faster by arrow keys
-  - [ ] useful for pip on other commands (like taking the directory we want
-  
+  - [X] iterate on directories faster by arrow keys
+  - [X] return last directory.(active dir)
+### Useage
+- Arrow keys (left/right) -> iterate on files/dirs
+- Tab key                 -> returning the current directory and exit 
+- Backspace Key           -> going back to parent dir(same as `cd ..`)
+
+### Demo
+![Demo](https://github.com/SC-One/TerminalBasedFileManager/blob/addGif/tbfm.gif)
