@@ -1,18 +1,20 @@
-#include <stdio.h>
 #include <tbfm/DirInfoUI.h>
 
-#include <ftxui/component/component.hpp>
-#include <ftxui/component/screen_interactive.hpp>  // for ScreenInteractive
-#include <ftxui/dom/elements.hpp>
-#include <ftxui/dom/node.hpp>
-#include <ftxui/screen/screen.hpp>
+#include <cstdlib>
 #include <iostream>
 #include <string>
+
+void cls() {
+  system("cls||clear");
+  return;
+}
 
 int main(int argc, const char* argv[]) {
   using namespace ftxui;
   DirInfoUI dirInfos;
   auto result = dirInfos.loop();
+
+  { cls(); }
   std::cout << result;
   return 0;
 }
