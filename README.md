@@ -13,4 +13,4 @@ It help you to iterate faster on the directories and files and taking fast data 
 - Backspace Key           -> going back to parent dir(same as `cd ..`)
 
 ### Demo
-![Demo](https://github.com/SC-One/TerminalBasedFileManager/blob/addGif/tbfm.gif)
+![Demo](https://github.com/SC-One/TerminalBasedFileManager/blob/dev_cpp17/tbfm.gif)
